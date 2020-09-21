@@ -31,11 +31,11 @@ Else, in a terminal, run:
 ```
 $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_optimal_price
 ```
-#### 2. Setup MongoDB on CP4D
+### 2. Setup MongoDB on CP4D
 
-#### 3. Host competitors webpage on cloud
+### 3. Host competitors webpage on cloud
 
-#### 4. Run the application
+### 4. Run the application
 
-#### 5. Analyze the results
+### 5. Analyze the results
 
