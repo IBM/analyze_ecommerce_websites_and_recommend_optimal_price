@@ -18,6 +18,10 @@ In this code pattern, we will develop an interactive UI integrated with custom b
 Please follow the below to setup and run this code pattern.
 
 1. [Clone the repo](#1-clone-the-repo)
+2. [Setup MongoDB on CP4D](#2-setup-mongodb-on-cp4d)
+3. [Host competitors webpage on cloud](#3-host-competitors-webpage-on-cloud)
+4. [Run the application](#4-run-the-application)
+5. [Analyze the results](#5-analyze-the-results)
 
 ### 1. Clone the repo
 
@@ -27,3 +31,11 @@ Else, in a terminal, run:
 ```
 $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_optimal_price
 ```
+#### 2. Setup MongoDB on CP4D
+
+#### 3. Host competitors webpage on cloud
+
+#### 4. Run the application
+
+#### 5. Analyze the results
+
