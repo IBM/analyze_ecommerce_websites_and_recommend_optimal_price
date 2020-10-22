@@ -8,8 +8,6 @@ Analyze e-commerce websites and recommend optimal price for a product
 
 # Author
 
-> Provide names and IBM email addresses.
-
 * Rahul Reddy Ravipally <raravi86@in.ibm.com>
 * Manoj Jahgirdar <manoj.jahgirdar@in.ibm.com>
 * Srikanth Manne <srikanth.manne@in.ibm.com>
