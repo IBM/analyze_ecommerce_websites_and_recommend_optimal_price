@@ -37,5 +37,56 @@ $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_opti
 
 ### 4. Run the application
 
+
+<details><summary><b>With Docker Installed</b></summary>
+
+- change directory to repo parent folder :
+    
+```bash
+$ cd analyze_ecommerce_websites_and_recommend_optimal_price/
+```
+
+- Build the **Dockerfile** as follows :
+
+```bash
+$ docker image build -t recommend_optimal_price .
+```
+
+- once the dockerfile is built run the dockerfile as follows :
+
+```bash
+$ docker run -p 8080:8080 recommend_optimal_price
+```
+
+- The Application will be available on <http://localhost:8080>
+
+</details>
+
+<details><summary><b>Without Docker</b></summary>
+
+- Install the python libraries as follows:
+
+    - change directory to repo parent folder
+    
+    ```bash
+    $ cd analyze_ecommerce_websites_and_recommend_optimal_price
+    ```
+
+    - use `python pip` to install the libraries
+
+    ```bash
+    $ pip install -r requirements.txt
+    ```
+
+- Finally run the application as follows:
+
+```bash
+$ python app.py
+```
+
+- The Application will be available on <http://localhost:8080>
+
+</details>
+
 ### 5. Analyze the results
 
