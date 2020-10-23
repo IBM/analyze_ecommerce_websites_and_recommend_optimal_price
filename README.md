@@ -94,10 +94,10 @@ start command:   python app.py
 
 * Once the app is deployed you can visit the `routes` to launch the application.
 
->-Example: 
+>Example: 
  > - http://competitors-websites.xx-xx.mybluemix.net/vendor1
  > - http://competitors-websites.xx-xx.mybluemix.net/vendor2
- > - Example: http://competitors-websites.xx-xx.mybluemix.net/vendor3
+ > - http://competitors-websites.xx-xx.mybluemix.net/vendor3
 
 >> Note: Since this is an open source project it is restricted to extract information from private ecommerce websites. Hence we are showcasing the pattern with custom websites.
 
