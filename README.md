@@ -103,6 +103,42 @@ start command:   python app.py
 
 ### 4. Setup IBM Cloud Function
 
+IBM Cloud Function is a Serverless Architecture where in a user can write a snippet of code and run it as API's without worrying about deploying it. A code snippet can easily be attached to an already existing deployment to add more Functionality.
+
+- Goto [IBM Cloud Resources](https://cloud.ibm.com/resources), and click on the **hamburger menu** and select **Functions > Actions** as shown. 
+
+![cloud-functions](doc/source/images/cloudaction.png)
+
+- In Cloud Actions page, click on **Create** to get started.
+
+![](doc/source/images/cloudfunctions1.png)
+
+- A **Single entities** list with Actions, Triger, Sequence, Quickstart Templates and Installable Packages will be presented. Select the **Action** to proceed.
+
+![](doc/source/images/cloudfunctions2.png)
+
+- Enter a `name` for the action, you can either create a custom package or leave it as `default package` and lastly select the `Runtime` as `Python 3.7` and click on **Create**.
+
+![](doc/source/images/cloudfunctions3.png)
+
+- An IDE with Hello World code written in python will be presented, replace everything from the IDE with the code present in the file [`food-visual-recognition.py`](pricing-tool.py).
+
+![](doc/source/images/cloudfunctions4.png)
+
+- After adding the code, click on the **Save** button to save the cloud function.
+
+![](doc/source/images/cloudfunctions5.png)
+
+- Once the Cloud Function is code ready, you need to expose an API so that the Backend server can interact with the written code. Click on **Endpoints** and **Enable as Web Action** and finally click on **Save** button as shown.
+
+![](doc/source/images/cloudfunctions6.png)
+
+- After you have enabled as **Web Action** you will see a `URL`, copy the `URL` as it will be used in the next step.
+
+![](doc/source/images/cloudfunctions7.png)
+
+- At this point, you have successfully setup a serverless cloud function.
+
 ### 5. Run the application
 
 
