@@ -121,11 +121,11 @@ IBM Cloud Function is a Serverless Architecture where in a user can write a snip
 
 ![](doc/source/images/cloudfunctions3.png)
 
-- An IDE with Hello World code written in python will be presented, replace everything from the IDE with the code present in the file [`food-visual-recognition.py`](pricing-tool.py).
+- An IDE with Hello World code written in python will be presented, replace everything from the IDE with the code present in the file [`pricing-tool.py`](pricing-tool.py).
 
 ![](doc/source/images/cloudfunctions4.png)
 
-- After adding the code, click on the **Save** button to save the cloud function.
+- After adding the code, update the URL from [3rd step](#3-host-competitors-webpage-on-cloud) as shown below. Click on the **Save** button to save the cloud function.
 
 ![](doc/source/images/cloudfunctions5.png)
 
