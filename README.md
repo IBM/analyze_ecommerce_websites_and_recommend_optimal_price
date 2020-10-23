@@ -36,9 +36,9 @@ $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_opti
 
 ### 3. Host competitors webpage on cloud
 
-### 5. Setup IBM Cloud Function
+### 4. Setup IBM Cloud Function
 
-### 6. Run the application
+### 5. Run the application
 
 
 <details><summary><b>With Docker Installed</b></summary>
@@ -91,5 +91,5 @@ $ python app.py
 
 </details>
 
-### 5. Analyze the results
+### 6. Analyze the results
 
