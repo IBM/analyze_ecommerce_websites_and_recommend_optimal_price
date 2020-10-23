@@ -101,6 +101,8 @@ start command:   python app.py
 
 >> Note: Since this is an open source project it is restricted to extract information from private ecommerce websites. Hence we are showcasing the pattern with custom websites.
 
+- Copy the URL in this step, eg: `http://competitors-websites.xx-xx.mybluemix.net/` .This will be used in the next step.
+
 ### 4. Setup IBM Cloud Function
 
 IBM Cloud Function is a Serverless Architecture where in a user can write a snippet of code and run it as API's without worrying about deploying it. A code snippet can easily be attached to an already existing deployment to add more Functionality.
