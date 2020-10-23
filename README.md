@@ -36,6 +36,70 @@ $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_opti
 
 ### 3. Host competitors webpage on cloud
 
+- Before you proceed, make sure you have installed [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started&locale=en-US) in your deployment machine.
+
+- From the cloned repo, goto **competitors-websites** directory in terminal, and run the following commands to deploy the Application to IBM Cloud Foundry.
+
+```bash
+$ cd competitors-websites/
+```
+
+* Log in to your IBM Cloud account, and select an API endpoint.
+```bash
+$ ibmcloud login
+```
+
+>NOTE: If you have a federated user ID, instead use the following command to log in with your single sign-on ID.
+
+```bash
+$ ibmcloud login --sso
+```
+
+* Target a Cloud Foundry org and space:
+```bash
+$ ibmcloud target --cf
+```
+
+* From within the competitors-websites directory push your app to IBM Cloud.
+```bash
+$ ibmcloud cf push competitors-websites
+```
+
+- The [manifest.yml](competitors-websites/manifest.yml) file will be used here to deploy the application to IBM Cloud Foundry.
+
+- On Successful deployment of the application you will see something similar on your terminal as shown.
+
+<pre><code>Invoking 'cf push'...
+
+Pushing from manifest to org manoj.jahgirdar@in.ibm.com / space dev as manoj.jahgirdar@in.ibm.com...
+
+...
+
+Waiting for app to start...
+
+name:              competitors-websites
+requested state:   started
+routes:            <b>competitors-websites.xx-xx.mybluemix.net </b>
+last uploaded:     Sat 16 May 18:05:16 IST 2020
+stack:             cflinuxfs3
+buildpacks:        python
+
+type:            web
+instances:       1/1
+memory usage:    256M
+start command:   python app.py
+     state     since                  cpu     memory           disk           details
+#0   <b>running</b>   2020-05-16T12:36:15Z   25.6%   116.5M of 256M   796.2M of 1
+</code></pre>
+
+* Once the app is deployed you can visit the `routes` to launch the application.
+
+>Example: http://competitors-websites.xx-xx.mybluemix.net/vendor1
+>Example: http://competitors-websites.xx-xx.mybluemix.net/vendor2
+>Example: http://competitors-websites.xx-xx.mybluemix.net/vendor3
+
+>> Note: Since this is an open source project it is restricted to extract information from private ecommerce websites. Hence we are showcasing the pattern with custom websites.
+
 ### 4. Setup IBM Cloud Function
 
 ### 5. Run the application
