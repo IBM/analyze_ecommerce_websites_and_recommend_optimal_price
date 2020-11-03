@@ -1,0 +1,4 @@
+  applications:
+  - name: flask-app
+    random-route: true
+    memory: 256M

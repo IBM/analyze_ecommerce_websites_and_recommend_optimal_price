@@ -143,6 +143,12 @@ IBM Cloud Function is a Serverless Architecture where in a user can write a snip
 
 ### 5. Run the application
 
+- Add the **Web Action** URL copied in [Step 4](#4-setup-ibm-cloud-function) and paste it on line number `47` in [static/javascript/script.js](static/javascript/script.js)
+<pre>
+var url = "Enter the cloud functions url here";
+</pre>
+
+- Once the **Web Action** URL is added in the code now you can run the code in your local machine in one of the two ways mentioned below.
 
 <details><summary><b>With Docker Installed</b></summary>
 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vendor Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <hr>
+        <h2>Vendor Page</h2>
+        <hr>
+        <div class="row">
+            {% for phone in phones %}
+            <div class="col-sm-6">
+                <div class="card" style="width:400px">
+                    <!--    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">-->
+                    <div class="card-body">
+                        <h4 class="card-title">{{ phone.name }}</h4>
+                        
+                        <ul class="card-text">
+                            {% for feature in phone.features %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+                        
+                        <input class="form-control" type="number" id="profit-margine{{loop.index}}" placeholder="Enter profit margine" />
+                        <br>
+                        <input class="form-control" type="number" id="minimum-profit{{loop.index}}" placeholder="Enter minimum required profit" />
+                        <br>
+                        <button id="submitBtn{{loop.index}}" class="btn btn-primary btn-block">Update Price</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+<script>
+    const profitMargine1 = document.getElementById("profit-margine1");
+    const profitMargine2 = document.getElementById("profit-margine2");
+    const profitMargine3 = document.getElementById("profit-margine3");
+    const profitMargine4 = document.getElementById("profit-margine4");
+    
+    const minimumProfit1 = document.getElementById("minimum-profit1");
+    const minimumProfit2 = document.getElementById("minimum-profit2");
+    const minimumProfit3 = document.getElementById("minimum-profit3");
+    const minimumProfit4 = document.getElementById("minimum-profit4");
+
+    const submit1 = document.getElementById("submitBtn1");
+    const submit2 = document.getElementById("submitBtn2");
+    const submit3 = document.getElementById("submitBtn3");
+    const submit4 = document.getElementById("submitBtn4");
+    
+    submit1.onclick = async () => {
+        await fetch(`/updatePrice?profitMargine=${profitMargine1.value}&minimumProfit=${minimumProfit1.value}&productID=1`).then(async (response) => {
+            data = await response.json();
+            if (data.flag == 1)
+                location.replace('/update');
+        });
+    };
+
+    submit2.onclick = async () => {
+        await fetch(`/updatePrice?profitMargine=${profitMargine1.value}&minimumProfit=${minimumProfit1.value}&productID=2`).then(async (response) => {
+            data = await response.json();
+            if (data.flag == 1)
+                location.replace('/update');
+        });
+    };
+
+    submit3.onclick = async () => {
+        await fetch(`/updatePrice?profitMargine=${profitMargine1.value}&minimumProfit=${minimumProfit1.value}&productID=3`).then(async (response) => {
+            data = await response.json();
+            if (data.flag == 1)
+                location.replace('/update');
+        });
+    };
+
+    submit4.onclick = async () => {
+        await fetch(`/updatePrice?profitMargine=${profitMargine1.value}&minimumProfit=${minimumProfit1.value}&productID=4`).then(async (response) => {
+            data = await response.json();
+            if (data.flag == 1)
+                location.replace('/update');
+        });
+    };
+</script>
+</html>

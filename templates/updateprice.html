@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Update Price Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body onload="loadPrices()">
+
+    <div class="container">
+        <hr>
+        <h2>Update Price</h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <label>Price from different sources</label>
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Vendor 1</h4>
+                        <p class="card-text">MRP: <strong id="mrp2"></strong> Selling Price: <strong id="amazon_sp"><div id="amazon_sp_loading" class="spinner-border text-light"></div></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <label>&nbsp;</label>
+                <div class="card bg-warning text-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Vendor 2</h4>
+                        <p class="card-text">MRP: <strong id="mrp"></strong> Selling Price: <strong id="flipkart_sp"><div id="flipkart_sp_loading" class="spinner-border text-light"></div></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <label>&nbsp;</label>
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Vendor 3</h4>
+                        <p class="card-text">MRP: <strong id="mrp3"></strong> Selling Price: <strong id="reliance_sp"><div id="reliance_sp_loading" class="spinner-border text-light"></div></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12" style="display: none;">
+                <div class="form-inline">
+                    <label for="profitmargin">Product Profit Margin: &nbsp;</label>
+                    <input type="number" class="form-control" id="profitmargin" value="{{profitMargine}}" placeholder="your profit margin" name="profitmargin">
+                    <label for="minmumprofit">&nbsp;&nbsp;&nbsp;Minimum Profit Required: &nbsp;</label>
+                    <input type="number" class="form-control" id="minmumprofit" value="{{minimumProfit}}" placeholder="minimum profit" name="minmumprofit"> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="submit" id="autoSubmit" onclick="submitData()" class="btn btn-primary">Submit</button>
+                </div>
+                <hr>
+            </div>
+
+            <div class="col-sm-12" id="algoop" style="display: none;">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>Minimum selling price </th>
+                            <th>Optimal selling price </th>
+                            <th>Total profit </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="min"></td>
+                            <td id="opt"></td>
+                            <td id="profit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+
+            <div class="col-sm-12" style="display: none;" id="slidersrange1">
+                <div class="slidecontainer">
+                    <p>Profit Range: <strong id="profitrange"></strong></p>
+                    <input type="range" step="10" class="slider" id="myRange1">
+                </div>
+                <hr>
+            </div>
+            <div class="col-sm-12" style="display: none;" id="slidersrange2">
+                <div class="slidecontainer">
+                    <p>Optimal Price Range: <strong id="optrange"></strong></p>
+                    <input type="range" step="10" class="slider" id="myRange2">
+                </div>
+                <label id="note2"> </label>
+                <hr>
+            </div>
+            <div class="col-sm-12" id="finalsp" style="display: none;">
+                <div class="form-inline">
+                    <label>Final Selling Price (Custom): &nbsp;</label>
+                    <input type="number" class="form-control" id="final" placeholder="Final Selling Price" name="final">
+                    <label> ₹</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Final Profit: &nbsp;</label>
+                    <input type="number" class="form-control" id="finalprofit" placeholder="Final Profit" name="finalprofit" readonly>
+                    <label> ₹</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-primary" id="updatePrice">Update Price</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <canvas id="myChart" width="400" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="../static/javascript/script.js">
+    </script>
+</body>
+
+</html>
