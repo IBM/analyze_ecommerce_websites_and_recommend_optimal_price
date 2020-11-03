@@ -202,3 +202,5 @@ $ python app.py
 
 ### 6. Analyze the results
 
+![](doc/source/images/sample-op1.png)
+![](doc/source/images/sample-op2.png)
