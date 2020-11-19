@@ -218,6 +218,33 @@ $ python app.py
 ![](doc/source/images/sample-op4.png)
 ![](doc/source/images/sample-op5.png)
 
+<table>
+  <thead>
+    <tr>
+      <td align="left">
+        :information_source: Information
+      </td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <ul>
+          <li><b>Minimum Selling Price :</b> The minumum price at which the vendor needs to sell the product inorder to get his/her Minimum Required Profit.</li>
+          <li><b>Optimal Selling Price :</b> A price given by the application algorithm that could improve vendor's chances of selling the product and at the same time maintain the desired profits.</li>
+             <li><b>Total Profit :</b> Profit that vendor would get if the he/she sells at the Optimal Selling Price. </li>
+          <li><b>Profit Range :</b> A dynamic slider that allows the user/vendor to see where his/her selling price stands in the market.</li>
+             <li><b>Optimal Price Range :</b> A dynamic slider that allows the user/vendor to see where his/her selling price stands in the market.</li>
+             <li><b>Final Selling Price (Custom) :</b> In this field the user/vendor can enter a price manually that he/she would want the product to be sold.</li>
+             <li><b>Final Profit:</b> Final profit that the user/vendor would get after he/she sets the selling price.</li>
+          <li><b>Update Price:<b> Updates the price online on your e-commerce website.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ```
 - Minimum Selling Price : The minumum price at which the vendor needs to sell the product inorder to get his/her Minimum Required Profit.
 - Optimal Selling Price : A price given by the application algorithm that could improve vendor's chances of selling the product and at the same time maintain the desired profits.
@@ -233,23 +260,4 @@ $ python app.py
 
 ![](doc/source/images/updateprice.png)
 
-<table>
-  <thead>
-    <tr>
-      <td align="left">
-        :information_source: Information
-      </td>
-    </tr>
-  </thead>
 
-  <tbody>
-    <tr>
-      <td>
-        <ul>
-          <li>Tis not true.</li>
-          <li>I won't explode.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
