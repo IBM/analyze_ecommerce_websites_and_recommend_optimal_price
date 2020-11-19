@@ -210,7 +210,7 @@ $ python app.py
 
 >> NOTE: Since the vendor gets the product directly from the manufacturer, he/she would be getting the product for a very low price compared to retail price.This difference in retail price and the price that the vendor bought is profit margin. `Enter profit margin` field takes in the total profit margin the user/vendor has on the product. `Enter minimum required profit` field takes in the minimum profit the user/vendor is planning to make the product.
 
-<img src="doc/source/images/sample-op2.png" width="1000" />
+<img src="doc/source/images/sample-op2.png" width="500" />
 
 - Application gets the prices of the competitors who are selling this product online. Based on the data given, the application compares the prices of the competitors and returns an optimal selling price which could improve user's chances of selling the product and at the same time maintain the desired profits.
 
@@ -241,7 +241,7 @@ $ python app.py
              <li><b>Optimal Price Range :</b> A dynamic slider that allows the user/vendor to see where his/her selling price stands in the market.</li>
              <li><b>Final Selling Price (Custom) :</b> In this field the user/vendor can enter a price manually that he/she would want the product to be sold.</li>
              <li><b>Final Profit:</b> Final profit that the user/vendor would get after he/she sets the selling price.</li>
-          <li><b>Update Price:<b> Updates the price online on your e-commerce website.</li>
+          <li><b>Update Price:</b> Updates the price online on your e-commerce website.</li>
         </ul>
       </td>
     </tr>
@@ -253,4 +253,6 @@ $ python app.py
 
 ![](doc/source/images/updateprice.png)
 
+## License
 
+[Apache 2.0](LICENSE)
