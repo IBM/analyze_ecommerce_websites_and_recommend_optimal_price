@@ -55,9 +55,9 @@ In this code pattern, we will develop an interactive UI integrated with custom b
 1. Clone the repo
 2. Setup MongoDB on CP4D
 3. Host competitors webpage on cloud
-4. Run the application
-5. Analyze the results
-
+4. Setup IBM Cloud Function
+5. Run the application
+6. Analyze the results
 
 # Components and services
 
