@@ -210,14 +210,14 @@ $ python app.py
 
 >> NOTE: Since the vendor gets the product directly from the manufacturer, he/she would be getting the product for a very low price compared to retail price.This difference in retail price and the price that the vendor bought is profit margin. `Enter profit margin` field takes in the total profit margin the user/vendor has on the product. `Enter minimum required profit` field takes in the minimum profit the user/vendor is planning to make the product.
 
-![](doc/source/images/sample-op2.png)
+<img src="doc/source/images/sample-op2.png" width="1000" />
 
 - Application gets the prices of the competitors who are selling this product online. Based on the data given, the application compares the prices of the competitors and returns an optimal selling price which could improve user's chances of selling the product and at the same time maintain the desired profits.
 
 <p float="left">
-  <img src="doc/source/images/sample-op3.png" width="100" />
-  <img src="doc/source/images/sample-op4.png" width="100" /> 
-  <img src="doc/source/images/sample-op5.png" width="100" />
+  <img src="doc/source/images/sample-op3.png" width="1000" />
+  <img src="doc/source/images/sample-op4.png" width="1000" /> 
+  <img src="doc/source/images/sample-op5.png" width="1000" />
 </p>
 
 
