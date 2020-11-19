@@ -35,7 +35,17 @@ In this code pattern, we will develop an interactive UI integrated with custom b
 
 # Flow
 
-![](doc/source/images/Architecture.png)
+![](doc/images/Architecture.png)
+
+  1. User launches the application.
+  2. Product details are retrieved from MongoDB.
+  3. List of products being sold are displayed.
+  4. User enters Profit Margin and Minimum Requied Profit for the product being sold.
+  5. This information is sent to the backend cloud functions.
+  6. Cloud Functions scrapes the competitors product details from their websites.
+  7. Custom algorithm computes the optimal price and sends itback to the application.
+  8. An interacive tool is displayed to the user on the UI.
+  9. User uses the tool and information on the UI to set a competitive price.
 
 
 # Instructions
@@ -51,6 +61,10 @@ In this code pattern, we will develop an interactive UI integrated with custom b
 
 # Components and services
 
+* IBM Cloud Functions
+* MongoDB on IBM Cloud
+* Cloud Foundry
+* Flask
 
 # Runtimes
 
