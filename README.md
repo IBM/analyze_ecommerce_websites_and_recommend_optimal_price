@@ -215,9 +215,9 @@ $ python app.py
 - Application gets the prices of the competitors who are selling this product online. Based on the data given, the application compares the prices of the competitors and returns an optimal selling price which could improve user's chances of selling the product and at the same time maintain the desired profits.
 
 <p float="left">
-  <img src="doc/source/images/sample-op3.png" width="1000" />
-  <img src="doc/source/images/sample-op4.png" width="1000" /> 
-  <img src="doc/source/images/sample-op5.png" width="1000" />
+  <img src="doc/source/images/sample-op3.png" width="300" />
+  <img src="doc/source/images/sample-op4.png" width="300" /> 
+  <img src="doc/source/images/sample-op5.png" width="300" />
 </p>
 
 
