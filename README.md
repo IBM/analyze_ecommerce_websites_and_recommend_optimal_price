@@ -4,7 +4,7 @@ Any e-commerce vendor who is selling a competitive product online, would want th
 
 In this code pattern, we will develop an interactive UI integrated with custom backend that will help the e-commerce vendors decide on an optimal selling price such that their chances of sales will increase and at the same time maintain their desired profits.
 
-![](doc/images/architecture.png)
+![](doc/source/images/architecture.png)
 
 ## Flow
 
