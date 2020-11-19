@@ -203,14 +203,17 @@ $ python app.py
 ### 6. Analyze the results
 
 - After you launch the application, you will see a list of products the user/vendor is selling.
+
 ![](doc/source/images/sample-op1.png)
 
 - Enter details as shown below and click on `Update Price`. 
 
 >> NOTE: Since the vendor gets the product directly from the manufacturer, he/she would be getting the product for a very low price compared to retail price.This difference in retail price and the price that the vendor bought is profit margin. `Enter profit margin` field takes in the total profit margin the user/vendor has on the product. `Enter minimum required profit` field takes in the minimum profit the user/vendor is planning to make the product.
+
 ![](doc/source/images/sample-op2.png)
 
 - Application gets the prices of the competitors who are selling this product online. Based on the data given, the application compares the prices of the competitors and returns an optimal selling price which could improve user's chances of selling the product and at the same time maintain the desired profits.
+
 ![](doc/source/images/sample-op3.png)
 ![](doc/source/images/sample-op4.png)
 ![](doc/source/images/sample-op5.png)
@@ -227,4 +230,26 @@ $ python app.py
 ```
 
 - After you set your price click on the `Update Price` button. This updates the price online on your e-commerce website.
+
 ![](doc/source/images/updateprice.png)
+
+<table>
+  <thead>
+    <tr>
+      <td align="left">
+        :information_source: Information
+      </td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        <ul>
+          <li>Tis not true.</li>
+          <li>I won't explode.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
