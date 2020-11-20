@@ -53,7 +53,7 @@ In this code pattern, we will develop an interactive UI integrated with custom b
 > Find the detailed steps for this pattern in the [readme file](https://github.com/IBM/movie_ticket_booking_application_using_crunchydb/blob/master/README.md). The steps will show you how to:
 
 1. Clone the repo
-2. Setup MongoDB on CP4D
+2. Setup MongoDB on Cloud
 3. Host competitors webpage on cloud
 4. Setup IBM Cloud Function
 5. Run the application
