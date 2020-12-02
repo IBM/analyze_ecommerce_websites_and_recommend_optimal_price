@@ -43,6 +43,9 @@ $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_opti
 ```
 ### 2. Setup MongoDB on IBM Cloud
 
+## Managed Cloud instance
+Navigate to IBM Cloud console in your browser, search for MongoDB, and provision an instance of the Databases for MongoDB service. Provision an instance, then click Service Credentials > New Credential. Download the credentials; we will copy them into the notebook later.
+
 ### 3. Host competitors webpage on cloud
 
 - Before you proceed, make sure you have installed [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started&locale=en-US) in your deployment machine.
