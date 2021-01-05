@@ -41,6 +41,7 @@ Else, in a terminal, run:
 ```
 $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_optimal_price
 ```
+
 ### 2. Setup MongoDB on IBM Cloud
 
 ## Managed Cloud instance
