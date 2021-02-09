@@ -1,4 +1,4 @@
-# Build interactive pricing tool for e-commerce vendors
+# Analyze e-commerce websites and recommend optimal pricing
 
 Any e-commerce vendor who is selling a competitive product online, would want their sales to be maximum. One of the important factor that users see in buying a competitive product is the selling price that the vendor is offering. In order to sell maximum products a vendor would need to give the product at best selling price in the market, without compromising on the desired profits.
 
