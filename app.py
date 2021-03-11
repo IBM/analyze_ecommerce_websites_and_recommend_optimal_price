@@ -15,7 +15,7 @@ app = Flask(__name__)
 ''' Setup MongoDB '''
 
 client = MongoClient(
-    "mongodb://admin:mongodb1234@62430c9c-f233-496f-9075-5489dc566b96-0.0135ec03d5bf43b196433793c98e8bd5.databases.appdomain.cloud:30588,62430c9c-f233-496f-9075-5489dc566b96-1.0135ec03d5bf43b196433793c98e8bd5.databases.appdomain.cloud:30588/ibmclouddb?authSource=admin&replicaSet=replset",
+    "ENDPOINT", # Change the endpoint with your MongoDB Endpoint
     ssl=True,
     ssl_ca_certs="static/ssl/ssl4mongodb"
 )
