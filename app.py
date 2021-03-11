@@ -15,7 +15,7 @@ app = Flask(__name__)
 ''' Setup MongoDB '''
 
 client = MongoClient(
-    "ENDPOINT", # Change the endpoint with your MongoDB Endpoint
+    "ENDPOINT-URL", # Change the endpoint with your MongoDB Endpoint
     ssl=True,
     ssl_ca_certs="static/ssl/ssl4mongodb"
 )
