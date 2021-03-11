@@ -44,13 +44,21 @@ $ git clone https://github.com/IBM/analyze_ecommerce_websites_and_recommend_opti
 
 ### 2. Setup MongoDB on IBM Cloud
 
-#### Managed Cloud instance
-
-- Navigate to IBM Cloud console in your browser, search for MongoDB, and provision an instance of the Databases for MongoDB service. Provision an instance, then click **Service Credentials > New Credential**. 
+- Create a [MongoDB service](https://cloud.ibm.com/catalog/services/databases-for-mongodb-group) on IBM Cloud.
 ![MongoDB-Instance](doc/source/images/mongodb1.png)
 
-- Download the credentials; we will need them to connect and loading the e-commerce product data.
-![MongoDB-Instance](doc/source/images/mongodb2.png)
+- [Set the Admin Password](https://cloud.ibm.com/docs/databases-for-mongodb?topic=databases-for-mongodb-admin-password) for your deployment.
+
+- From the [resources](https://cloud.ibm.com/resources) open **Databases for MongoDB** instance, and select **Overview** in the left panel as shown.
+![MongoDB-landingpage](doc/source/images/mongodblandingpage.png)
+
+- Scroll down to the **Endpoints** section and click on **MongoDB**, copy the `Endpoint` in a notepad and replace the `$USERNAME` and `$PASSWORD` with admin and password that you created previously.
+![](doc/source/images/copyendpoint.png)
+
+- Scroll further down and download the `ssl` certificate and rename the file as `ssl4mongodb` as shown.
+![](doc/source/images/downloadssl.png) 
+
+**Note:** this `Endpoint` and `ssl` certificate will be used in [step 5](#5-run-the-application).
 
 ### 3. Host competitors webpage on cloud
 
@@ -166,7 +174,11 @@ IBM Cloud Function is a Serverless Architecture where in a user can write a snip
 var url = "Enter the cloud functions url here";
 </pre>
 
-- Once the **Web Action** URL is added in the code now you can run the code in your local machine in one of the two ways mentioned below.
+- Replace the `ENDPOINT-URL` on line number `18` in [app.py](app.py) with the endpoint copied in [step 2](#2-setup-mongodb-on-ibm-cloud).
+
+- Place the `ssl4mongodb` file downloaded in [step 2](#2-setup-mongodb-on-ibm-cloud) inside [static/ssl/](static/ssl/) directory.
+
+- Now you can run the code in your local machine in one of the two ways mentioned below.
 
 <details><summary><b>With Docker Installed</b></summary>
 
